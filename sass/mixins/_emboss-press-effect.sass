@@ -1,6 +1,6 @@
-@mixin box-emboss($opacity, $opacity2)
-  box-shadow: white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0
+=emboss($op, $op2)
+  box-shadow: 0 1px 0 0 rgba(#ffff, $op), inset 0 1px 0 0 rgba(#000000,$op2)
 
 
-@mixin letterpress($opacity)
-  text-shadow: white($opacity) 0 1px 0
+=letterpress($opacity)
+  text-shadow: 0 1px 0 rgba(#ffff, $opacity)
